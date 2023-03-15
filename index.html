@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miniproject 2</title>
+    <link rel="stylesheet" href="index.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="quick.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="slickmain/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slickmain/slick/slick-theme.css" />
+
+    <script type="text/javascript" src="slickmain/slick/slick.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="navbar">
+            <img class="logo" src="logo.png" alt="logo">
+            <nav>
+                <ul>
+                    <li><a class="active" href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">MENU</a></li>
+                    <li><a href="#">DELIVERY</a></li>
+                    <li><a href="#">CONTACTS</a></li>
+                    <li><a><button id="myBtn" class="navbarLi">Login</button></li></a>
+
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+        
+
+
+
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <center>
+                    <p><b>Log In</b></p>
+                </center>
+                <form action="">
+                    <div class="row">
+                        <input type="text" id="name" name="firstname" placeholder="Name" required>
+                    </div>
+                    <div class="row">
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+                    </div>
+                    <div class="row">
+                        <center><input type="number" id="number" name="number" placeholder="Mobile No." required>
+                        </center>
+                    </div>
+                    <div class="row">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="your-class">
+            <div> <img src="banners/slider1.jpg" alt="asset 1"></div>
+            <div><img src="banners/slider2.png" alt="asset 1"></div>
+            <div><img src="banners/slider3.png" alt="asset 1"></div>
+        </div>
+
+        <!-- //midsection -->
+
+        <!-- <div class="features"> -->
+
+        <div class="tabContainer">
+
+
+            <img src="bread.png">
+            <h1>Features</h1>
+
+
+
+            <div class="buttonContainer">
+                <button onclick="showPanel (0,'#ffffff')">Feature 1</button>
+                <button onclick="showPanel(1,'#ffffff')">Feature 2</button>
+                <button onclick="showPanel(2,'#ffffff')">Feature 3</button>
+
+
+                <div class="tabcontent" id="feature1">
+                    <div class="containers">
+                        <div class="inContainer">
+                            <div class="c1_box">
+                                <img src="cake-1.png">
+                            </div>
+                            <div class="c2_box">
+                                <h1>
+                                    Enjoy healthy
+                                </h1>
+                                <p class="f_desc">Whole grains</p>
+                                <p class="f_desc2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Vivamus tempus scelerisque erat, vel dapibus
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="inContainer">
+                            <div class="c1_box">
+                                <img src="cake-2.png">
+                            </div>
+                            <div class="c2_box">
+                                <h1>
+                                    100% Delicious
+                                </h1>
+                                <p class="f_desc">Goodies</p>
+                                <p class="f_desc2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Vivamus tempus scelerisque erat, vel dapibus
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="inContainer">
+                            <div class="c1_box">
+                                <img src="cake-3.png">
+                            </div>
+                            <div class="c2_box">
+                                <h1>
+                                    Wholesome
+                                </h1>
+                                <p class="f_desc">Pies</p>
+                                <p class="f_desc2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Vivamus tempus scelerisque erat, vel dapibus
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+
+
+
+
+        <!-- </div> -->
+
+        <div class="contact">
+            <img src="cake.png">
+            <h1>Contact-Us</h1>
+
+            <div class="out_msgbox">
+                <div class="msgbox">
+                    <form onsubmit="return myAlert()">
+                        <h3 id="message1" class="center">Send Us a Message</h3>
+                        <input type="text" placeholder="Name" id="Name1" class="msg_form" required>
+                        <input type="email" placeholder="E-Mail" id="email1" pattern=".+@gmail.com" class="msg_form"
+                            required>
+                        <textarea type="textarea" placeholder="Your Message" id="msg1" class="msg_form"
+                            rows="3"></textarea>
+                        <input type="submit" value="Send" id="submit1" required>
+                    </form>
+                </div>
+            </div>
+            <div class="out_our_contacts">
+                <div class="our_contacts">
+                    <h2 class="center">Our Contacts</h2><br>
+                    <img src="location.png" class="ico">
+                    <p class="icotext">Harvest of North Charollete</p><br>
+                    <img src="envlope.jpg" class="ico">
+                    <p class="icotext">1824 East Arbors Drive #390,Charollete,NC 28262</p><br>
+                    <img src="call.png" class="ico">
+                    <p class="icotext">(704)-971-7280 </p><br>
+                </div>
+            </div>
+
+            <div class="footermain">
+                <div class="footerLeft">
+                    <img src="twitter.png" class="footicon">
+                    <img src="fb.png" class="footicon">
+                    <img src="insta.png" class="footicon">
+                </div>
+                <div class="footerCenter">
+                    <img src="footer-logo.png">
+                </div>
+                <div class="footerRight">
+                    <span>©2020 Bakery Street.All rights are reserved</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+</body>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.your-class').slick({
+            dots: true,
+            speed: 3,
+            SlideToShow: 1,
+            SlideToScroll: 1,
+            arrow: true,
+
+            //   background-Color: violet:
+        });
+    });
+
+
+
+    //   popup
+    // Get the modal
+    var modal = document.getElementById("myModal");
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks the button, open the modal 
+    btn.onclick = function () {
+        modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+        modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+
+    //   tab
+    var tabButtons = document.querySelectorAll(".tabContainer .buttonContainer button");
+    var tabPanels = document.querySelectorAll(".tabContainer  .tabPanel");
+
+    function showPanel(panelIndex, colorCode) {
+        tabButtons.forEach(function (node) {
+            node.style.backgroundColor = "";
+            node.style.color = "";
+        });
+        tabButtons[panelIndex].style.backgroundColor = "orange";
+        tabButtons[panelIndex].style.color = "white";
+        tabPanels.forEach(function (node) {
+            node.style.display = "none";
+        });
+        tabPanels[panelIndex].style.display = "block";
+        tabPanels[panelIndex].style.backgroundColor = colorCode;
+    }
+    showPanel(0, '#ffffff');
+
+
+
+</script>
+
+</html>
